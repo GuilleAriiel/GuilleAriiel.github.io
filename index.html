@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <meta name="description" content="Portfolio of Guillermo Cejas, Full Stack Developer specialized in modern web applications.">
+    <title>Guillermo Cejas | Full Stack Developer</title>
+    
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -16,92 +18,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar grid">
-            <h1>Logo</h1>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="hero">
+  <nav class="navbar">
+    <a href="#hero" class="logo">Guillermo Cejas</a>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero-text">
+    <h1>Guillermo Cejas</h1>
+    <h2>Full Stack Developer</h2>
+    <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique facere accusantium error.</p>
+    <a href="#contact" class="button">Contact</a>
+  </div>
+  <div class="hero-img">
+    <img src="img/img_placeholder.jpg" alt="Portrait illustration of Guillermo Cejas">
+  </div>
+</header>
     <main>
-        <section id="hero" class="grid">
-            <div class="hero-text">
-                <h2>Guillermo Cejas /<br />Full Stack Developer</h3>
-                <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique facere accusantium 
-                    error.</p>
-                <a class="button" href="#contact">Contact</a>
-            </div>
-            <div class="hero-img">
-                <img src="img/img_placeholder.jpg" alt="">
-            </div>
-        </section>
-        <section id="projects">
-            <h3>My Projects</h3>
-            <div class="projects grid">
-                <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Project1</h4>
-                </a>
-                <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Project2</h4>
-                </a>
-                <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Project3</h4>
-                </a>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="grid">
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Skill1</h4>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Skill2</h4>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Skill3</h4>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="">
-                    <h4>Skill4</h4>
-                </li>
-            </ul>
-        </section>
+        
+
         <section id="about">
             <h2>About Me</h2>
             <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis autem dicta aliquid eius 
                 recusandae architecto doloribus dolore magni similique, nostrum odit repellat, est hic 
                 minima? Architecto natus dignissimos sunt ex!</p>
         </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="grid">
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Skill1</h3>
+                    <p>data</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Skill2</h3>
+                    <p>data</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Skill3</h3>
+                    <p>data</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Skill4</h3>
+                    <p>data</p>
+                    <div class="watermark">Skill</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!--podria usar <article> dado que no hay links reales, pero usamos <a> para ahorrar el trabajo de reestructuracion cuando haya links reales a proyectos-->
+            <div class="projects grid">
+                <a href="#" class="card">
+                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    <h4>Project1</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    <h4>Project2</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    <h4>Project3</h4>
+                </a>
+            </div>
+        </section>
         
         <section id="contact">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <p class="leading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <form>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <textarea placeholder="YOUR MESSAGE"></textarea>
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" placeholder="Your name here" required>
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" placeholder="Your mail here" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
                 <button class="button" type="submit">Send</button>
             </form>
         </section>
     </main>
     <footer>
         <div class="grid">
-            <p class="copyright">Links</p>
+            <p>&copy; 2025 Guillermo Cejas</p>
             <ul class="social">
-                <l1><a href="">Github</a></l1>
-                <l1><a href="">Linkedn</a></l1>
-                <l1><a href="">correofalso@123.com</a></l1>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Linkedn</a></li>
+                <li><a href="mailto:guillermo@example.com">Email</a></li>
             </ul> 
         </div>
     </footer>
