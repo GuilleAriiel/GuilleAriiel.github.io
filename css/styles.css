@@ -164,9 +164,8 @@ header{
 
 .hero-img img{
     width: 200%;
-    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
-    border-width: 4px;
-    border-style: solid;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    border-radius: 10px;
 }
 
 #about{
@@ -418,6 +417,7 @@ footer img{
 
     .navbar{
         padding: 10px 0;
+        background-color: white;
     }
     #hero,#projects,#skills,#contact{
         padding: 90px 20px;
