@@ -1,81 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reserva tu turno online en menos de 1 minuto!">
     <title>Landing con Sistema de Turnos</title>
-    
+
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
-    <a href="#hero" class="logo">Logo</a>
-    <ul>
-      <li><a href="#skills">Opiniones</a></li>
-      <li><a href="#projects">Servicios</a></li>
-      <li><a href="#contact">Reservar</a></li>
-    </ul>
-  </nav>
+        <a href="#hero" class="logo">Logo</a>
+        <ul>
+            <li><a href="#skills">Opiniones</a></li>
+            <li><a href="#projects">Servicios</a></li>
+            <li><a href="#contact">Reservar</a></li>
+        </ul>
+    </nav>
     <header id="hero">
-  
-  <div class="hero-text">
-    <h1>Guillermo Cejas</h1>
-    <h2>Full Stack Developer</h2>
-    <p class="leading">Reserva tu turno online en menos de 1 minuto! Atencion Profesional garantizada.</p>
-    <a href="#contact" class="button">Reservar ahora</a>
-  </div>
-  <div class="hero-img">
-    <img src="img/img_placeholder.jpg" alt="Portrait illustration of Guillermo Cejas">
-  </div>
-</header>
+        <img src="img/img_placeholder.jpg" alt="Portrait illustration of Guillermo Cejas">
+        <div class="hero-text">
+            <h1>Titulo</h1>
+            <h2>Slogan Developer</h2>
+            <p class="leading">Reserva tu turno online en menos de 1 minuto! Atencion Profesional garantizada.</p>
+            <a href="#contact" class="button">Reservar ahora</a>
+        </div>
+    </header>
     <main>
-        
 
         <section id="about">
             <h2>About Me</h2>
-            <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis autem dicta aliquid eius 
-                recusandae architecto doloribus dolore magni similique, nostrum odit repellat, est hic 
+            <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis autem dicta aliquid eius
+                recusandae architecto doloribus dolore magni similique, nostrum odit repellat, est hic
                 minima? Architecto natus dignissimos sunt ex!</p>
-        </section>
-
-        <section id="skills">
-            <h2>Opiniones</h2>
-            <ul class="grid">
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Skill1</h3>
-                    <p>data</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Skill2</h3>
-                    <p>data</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Skill3</h3>
-                    <p>data</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Skill4</h3>
-                    <p>data</p>
-                    <div class="watermark">Skill</div>
-                </li>
-            </ul>
         </section>
 
         <section id="projects">
@@ -83,20 +54,66 @@
             <!--podria usar <article> dado que no hay links reales, pero usamos <a> para ahorrar el trabajo de reestructuracion cuando haya links reales a proyectos-->
             <div class="projects grid">
                 <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
-                    <h4>Project1</h4>
+                    <div class="card-img">
+                        <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    </div>
+                    <div class="card-info">
+                        <h4>Servicio</h4>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                    </div>
                 </a>
                 <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
-                    <h4>Project2</h4>
+                    <div class="card-img">
+                        <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    </div>
+                    <div class="card-info">
+                        <h4>Servicio</h4>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                    </div>
                 </a>
                 <a href="#" class="card">
-                    <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
-                    <h4>Project3</h4>
+                    <div class="card-img">
+                        <img src="img/img_placeholder.jpg" alt="Screenshot of portfolio project">
+                    </div>
+                    <div class="card-info">
+                        <h4>Servicio</h4>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                    </div>
                 </a>
             </div>
         </section>
-        
+
+        <section id="skills">
+            <h2>Opiniones</h2>
+            <ul class="grid">
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Opinion</h3>
+                    <p>Texto</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Opinion</h3>
+                    <p>Texto</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Opinion</h3>
+                    <p>Texto</p>
+                    <div class="watermark">Skill</div>
+                </li>
+                <li>
+                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
+                    <h3>Opinion</h3>
+                    <p>Texto</p>
+                    <div class="watermark">Skill</div>
+                </li>
+            </ul>
+        </section>
+
+
         <section id="contact">
             <h2>Contact</h2>
             <p class="leading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -118,8 +135,9 @@
                 <li><a href="#">Github</a></li>
                 <li><a href="#">Linkedn</a></li>
                 <li><a href="mailto:guillermo@example.com">Email</a></li>
-            </ul> 
+            </ul>
         </div>
     </footer>
 </body>
+
 </html>
