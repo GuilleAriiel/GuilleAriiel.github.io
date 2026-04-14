@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -23,6 +25,7 @@
 </head>
 
 <body>
+
     <nav class="navbar">
         <a href="#hero" class="logo">Logo</a>
         <ul>
@@ -31,6 +34,9 @@
             <li><a href="#contact">Reservar</a></li>
         </ul>
     </nav>
+
+
+    <!--Hero Section begin-->
     <header id="hero">
         <img src="img/img_placeholder.jpg" alt="Portrait illustration of Guillermo Cejas">
         <div class="hero-text">
@@ -40,15 +46,23 @@
             <a href="#contact" class="button">Reservar ahora</a>
         </div>
     </header>
+    <!--Hero Section end-->
+
+
     <main>
 
+
+        <!--Secion 1 begin-->
         <section id="about">
             <h2>About Me</h2>
             <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis autem dicta aliquid eius
                 recusandae architecto doloribus dolore magni similique, nostrum odit repellat, est hic
                 minima? Architecto natus dignissimos sunt ex!</p>
         </section>
+        <!--Secion 1 end-->
 
+
+        <!--Secion 2 begin-->
         <section id="projects">
             <h2>Servicios</h2>
             <!--podria usar <article> dado que no hay links reales, pero usamos <a> para ahorrar el trabajo de reestructuracion cuando haya links reales a proyectos-->
@@ -59,7 +73,9 @@
                     </div>
                     <div class="card-info">
                         <h4>Servicio</h4>
-                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum
+                            dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque,
+                            recusandae laborum.</p>
                     </div>
                 </a>
                 <a href="#" class="card">
@@ -68,7 +84,9 @@
                     </div>
                     <div class="card-info">
                         <h4>Servicio</h4>
-                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum
+                            dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque,
+                            recusandae laborum.</p>
                     </div>
                 </a>
                 <a href="#" class="card">
@@ -77,43 +95,44 @@
                     </div>
                     <div class="card-info">
                         <h4>Servicio</h4>
-                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque, recusandae laborum.</p>
+                        <p>Service Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum
+                            dolores voluptate, ut enim magnam reiciendis libero quidem deserunt dolorum dolor, cumque,
+                            recusandae laborum.</p>
                     </div>
                 </a>
             </div>
         </section>
+        <!--Secion 2 end-->
 
-        <section id="skills">
+
+        <!--Secion 3 begin-->
+        <section id="review">
             <h2>Opiniones</h2>
-            <ul class="grid">
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Opinion</h3>
-                    <p>Texto</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Opinion</h3>
-                    <p>Texto</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Opinion</h3>
-                    <p>Texto</p>
-                    <div class="watermark">Skill</div>
-                </li>
-                <li>
-                    <img src="img/img_placeholder.jpg" alt="Image of Skill">
-                    <h3>Opinion</h3>
-                    <p>Texto</p>
-                    <div class="watermark">Skill</div>
-                </li>
-            </ul>
+            <div class="review-slider">
+                <div class="review-wrapper">
+                    <div class="review-box">
+                        <img src="" alt="">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas aspernatur cumque
+                            sequi.
+                        </p>
+                        <h3>John Doe</h3>
+                        <div class="review-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
+        <!--Secion 3 end-->
 
 
+        <!--Secion 4 begin-->
         <section id="contact">
             <h2>Contact</h2>
             <p class="leading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -127,6 +146,56 @@
                 <button class="button" type="submit">Send</button>
             </form>
         </section>
+        <!--Secion 4 end-->
+
+        <section class="testimonialSection">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1
+                        <div class="testimonialBox">
+                            <div class="testimonialContent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Unde et expedita quis sequi
+                                    placeat. Dolorum ipsum odit cumque autem beatae!</p>
+                            </div>
+                            <div class="testimonialDetail">
+                                <h3>Someone<br><span>Cretive Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">Slide 2
+                        <div class="testimonialBox">
+                            <div class="testimonialContent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Unde et expedita quis sequi
+                                    placeat. Dolorum ipsum odit cumque autem beatae!</p>
+                            </div>
+                            <div class="testimonialDetail">
+                                <h3>Someone<br><span>Cretive Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">Slide 3
+                        <div class="testimonialBox">
+                            <div class="testimonialContent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Unde et expedita quis sequi
+                                    placeat. Dolorum ipsum odit cumque autem beatae!</p>
+                            </div>
+                            <div class="testimonialDetail">
+                                <h3>Someone<br><span>Cretive Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="grid">
@@ -138,6 +207,26 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            effect: 'coverflow',
+            grabCursor: 'true',
+            centeredSlides: 'true',
+            slidesPerView: '2',
+            coverflowEffects: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slidesShadow: true,
+            },
+
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>

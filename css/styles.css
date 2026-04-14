@@ -1,47 +1,48 @@
-:root{
+:root {
     --bg-color: #0f172a;
     --text-color: #e5e7eb;
     --surface: #020617;
     --muted: #9ca3af;
-    --primary:#0077b6;
-    --secondary:#9867C5;
+    --primary: #0077b6;
+    --secondary: #9867C5;
     --link-color: #EEF2F7;
-    --gradient:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%);
+    --gradient: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /*resets*/
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style-type: none;
 }
 
 /*base styles*/
-body{
+body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
-    }
+}
 
-section{
+section {
     background: var(--surface);
     margin: 0 0 30px 0;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 6px 10px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 18px 0px rgba(0,0,0,.12);
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 18px 0px rgba(0, 0, 0, .12);
     border-radius: 5px;
 }
 
-.button{
+.button {
     background: var(--primary);
     border: 2px solid var(--primary);
     color: var(--text-color);
@@ -53,7 +54,7 @@ section{
     transition: transform 0.5s ease;
 }
 
-.button:hover{
+.button:hover {
     color: var(--primary);
     border: 2px solid var(--primary);
     background: none;
@@ -61,13 +62,14 @@ section{
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6);
 }
 
-.button:active{
+.button:active {
     background: var(--primary);
     color: white;
     border: white 2px solid;
 }
 
-input,textarea{
+input,
+textarea {
     background: rgba(255, 255, 255, 0.05);
     padding: 10px 16px;
     border-radius: 20px;
@@ -75,49 +77,86 @@ input,textarea{
     font-size: 1em;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     color: var(--text-color);
     font-weight: normal;
     line-height: 1.4em;
 }
 
-p,a,li{
+p,
+a,
+li {
     color: var(--text-color);
     line-height: 1.4em;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
-h1{
+h1 {
     font-size: clamp(1.6rem, 5vw, 3rem);
 }
 
-h2{
+h2 {
     font-size: clamp(1.4rem, 4vw, 2rem);
 }
 
-h3{
+h3 {
     font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
-h4{
+h4 {
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-header{
+header {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.terstimonialSection { 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+}
+
+.swiper{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.swiper-slide{
+    background: #0077b6;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
 }
 
 /* Mobile Styles */
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     margin: 0;
     padding: 10px 10px;
     grid-column: 1/9;
@@ -125,131 +164,141 @@ header{
     background-color: var(--primary);
 }
 
-.navbar .logo{
+.navbar .logo {
     grid-column: 1/4;
     grid-row: 1;
 
 }
 
-.navbar ul{
+.navbar ul {
     display: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--primary);
 }
 
-#hero{
+#hero {
     align-items: center;
     position: relative;
     width: 100%;
     margin-bottom: 30px;
 }
 
-#hero img{
+#hero img {
     grid-column: 1/9;
     width: 100%;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-.hero-text{
+.hero-text {
     height: auto;
     grid-column: 1/9;
     padding: 10px;
     position: absolute;
 }
 
-.hero-text a{
+.hero-text a {
     margin: 20px 0;
 }
 
-#about{
+#about {
     padding: 30px 20px;
 }
 
-#projects{
+#projects {
     padding: 30px 20px;
 }
 
-#projects h3{
+#projects h3 {
     margin-bottom: 0;
     text-align: center;
 }
 
-.projects{
+.projects {
     margin: 20px 0;
 }
 
-.projects a{
+.projects a {
     grid-column: 1/9;
     margin: 20px 0;
 }
 
-.projects h4{
+.projects h4 {
     color: #9994f7;
 }
 
-.projects a{
+.projects a {
     transition: transform 0.6s ease;
 }
 
-.projects a:hover{
+.projects a:hover {
     transform: scale(1.05);
 }
-.card{
+
+.card {
     display: grid;
-    grid-template-rows: 1fr 1fr; /* Crea dos filas de igual tamaño */
+    grid-template-rows: 1fr 1fr;
+    /* Crea dos filas de igual tamaño */
     height: auto;
     background-color: white;
-    text-align: center;
 }
-.card-img{
+
+.card-img {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.card-img img{
+.card-img img {
     width: 100%;
 }
 
 .card-info {
-    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
 }
 
-.card-info h4{
-    padding: 15px 0;
+.card-info h4 {
+    margin-bottom: 0;
+}
+
+.card-info p {
+    margin: auto 10px;
 }
 
 
-#skills{
+#review {
     padding: 30px 20px;
 }
 
-#skills ul{
+#review ul {
     margin: 40px 0;
 }
 
-#skills li{
+#review li {
     padding: 10px;
     background: var(--primary);
-    background-image: linear-gradient(#3acfd5 0%, #3a4ed5 100%);/*linear-gradient(#f72648, #fccb3c);*/
+    background-image: linear-gradient(#3acfd5 0%, #3a4ed5 100%);
+    /*linear-gradient(#f72648, #fccb3c);*/
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
     grid-column: span 4;
     border-radius: 15px;
 }
 
-#skills img{
+#review img {
     width: 50px;
     height: auto;
     margin: 10px 0;
 }
 
-#skills p{
+#review p {
     padding-left: 5px;
 }
 
-#skills .watermark{
+#review .watermark {
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -262,203 +311,245 @@ header{
     text-transform: uppercase;
 }
 
-#contact{
+#contact {
     padding: 30px 20px;
 }
 
-#contact h3, #contact p{
+#contact h3,
+#contact p {
     margin-bottom: 0;
     text-align: center;
 }
 
-#contact form{
+#contact form {
     width: 80%;
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
 }
 
-#contact input,#contact textarea{
+#contact input,
+#contact textarea {
     width: 100%;
     margin: 10px 0;
 }
 
-#contact textarea{
+#contact textarea {
     max-width: 100%;
     height: 200px;
 }
 
-#contact .button{
+#contact .button {
     margin-top: 10px;
 }
 
-#contact input:focus, #contact textarea:focus{
+#contact input:focus,
+#contact textarea:focus {
     outline-color: #0077b6;
 }
 
-footer{
+footer {
     padding: 30px 20px;
 }
 
-footer p{
+footer p {
     grid-column: 1/3;
     font-size: 0.8em;
 }
 
-footer .social{
+footer .social {
     grid-column: 7/9;
     display: flex;
     justify-content: flex-end;
 }
-footer li{
+
+footer li {
     margin: 0 6px;
 }
 
-footer img{
-  width: 20px;
+footer img {
+    width: 20px;
 }
 
 /* Small tablets Styles*/
-@media screen and (min-width:768px){
-    .hero-text{
+@media screen and (min-width:768px) {
+    .hero-text {
         grid-column: 1/9;
     }
-    .hero-img{
+
+    .hero-img {
         grid-column: 5/9;
     }
-    .hero-img img{
+
+    .hero-img img {
         width: 100%;
     }
-    .projects{
+
+    .projects {
         margin-top: 40px;
     }
-    .projects .card{
+
+    .projects .card {
         margin: 20px 0;
     }
 
-    .card{
+    .card {
         display: flex;
         text-align: left;
     }
 
-    .card-info{
+    .card-info {
         width: 100%;
     }
 
 
-    footer{
+    footer {
         background-size: 20%;
     }
 
 }
+
 /* Large Tablets & Laptops Styles */
-@media screen and (min-width: 1024px){
-    body{
+@media screen and (min-width: 1024px) {
+    body {
         font-size: 18px;
     }
-    header,main,footer{
+
+    header,
+    main,
+    footer {
         max-width: 1060px;
         margin: 0 auto;
         width: 100%;
     }
-    .leading{
+
+    .leading {
         margin: 20px 0;
     }
-    .navbar{
+
+    .navbar {
         margin: 0;
         padding: 10px 20px;
     }
-    .navbar .logo{
+
+    .navbar .logo {
         grid-column: 1/3;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: flex;
         grid-column: 5/9;
         justify-content: flex-end;
         align-self: center;
     }
-    .navbar li{
+
+    .navbar li {
         margin-left: 20px;
     }
-    .hero-text{
+
+    .hero-text {
         grid-column: 1/5;
         align-self: center;
     }
-    #hero{
+
+    #hero {
         padding-bottom: 40px;
     }
-    .projects a:nth-child(1){
+
+    .projects a:nth-child(1) {
         grid-column: 2/4;
     }
-    .projects a:nth-child(2){
+
+    .projects a:nth-child(2) {
         grid-column: 4/6;
         padding-top: 140px;
     }
-    .projects a:nth-child(3){
+
+    .projects a:nth-child(3) {
         grid-column: 6/8;
     }
-    .projects a *{
+
+    .projects a * {
         max-width: 80%;
         margin: 30px 10%;
     }
-    #skills{
+
+    #review {
         padding: 30px 20px;
     }
-    #skills ul{
+
+    #review ul {
         margin: 40px auto;
     }
-    #skills li{
+
+    #review li {
         grid-column: span 2;
     }
-    #skills p{
+
+    #review p {
         max-width: 600px;
         margin: 40px auto;
     }
-    footer{
+
+    footer {
         background-size: 20%;
         padding: 30px 0;
     }
 }
+
 /* Desktop Styles*/
-@media screen and (min-width: 1440px){
-    body{
+@media screen and (min-width: 1440px) {
+    body {
         font-size: 20px;
     }
 
-    .navbar{
+    .navbar {
         padding: 10px 0;
         background-color: white;
     }
-    #hero,#projects,#skills,#contact{
+
+    #hero,
+    #projects,
+    #review,
+    #contact {
         padding: 90px 20px;
     }
-    .leading{
+
+    .leading {
         margin: 20px 0;
     }
-    .projects a:nth-child(1){
+
+    .projects a:nth-child(1) {
         grid-column: 1/3;
     }
-    .projects a:nth-child(2){
+
+    .projects a:nth-child(2) {
         grid-column: 4/6;
         padding-top: 140px;
     }
-    .projects a:nth-child(3){
+
+    .projects a:nth-child(3) {
         grid-column: 7/9;
     }
-    .projects a *{
+
+    .projects a * {
         max-width: 100%;
         margin: 30px 0%;
     }
-    footer{
+
+    footer {
         background-size: 30%;
     }
-    footer .copyright{
+
+    footer .copyright {
         grid-column: 1/4;
     }
-    footer .social{
+
+    footer .social {
         grid-column: 6/9;
     }
-    footer img{
+
+    footer img {
         width: 30px;
     }
 }
